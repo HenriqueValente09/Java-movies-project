@@ -1,5 +1,7 @@
-import models.Movie;
-import models.Show;
+package br.com.moviesearch;
+
+import br.com.moviesearch.models.Movie;
+import br.com.moviesearch.models.Show;
 
 public class Main {
     public static void main(String[] args) {

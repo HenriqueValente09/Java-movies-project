@@ -1,4 +1,4 @@
-package models;
+package br.com.moviesearch.models;
 
 public class Title {
     private String name;
