@@ -1,4 +1,4 @@
-package br.com.moviesearch;
+package models;
 
 public class Show extends Title{
     private int seasons;

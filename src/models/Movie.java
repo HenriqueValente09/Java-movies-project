@@ -1,4 +1,4 @@
-package br.com.moviesearch;
+package models;
 
 public class Movie extends Title {
     private String director;

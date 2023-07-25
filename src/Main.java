@@ -1,5 +1,5 @@
-import br.com.moviesearch.Movie;
-import br.com.moviesearch.Show;
+import models.Movie;
+import models.Show;
 
 public class Main {
     public static void main(String[] args) {
