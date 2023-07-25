@@ -37,4 +37,13 @@ public class Show extends Title{
     public void setActive(boolean active) {
         this.active = active;
     }
+
+    @Override
+    public void getData() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Release Date: " + this.getReleaseDate());
+        System.out.println("Length: " + this.getEpisodes() * this.getEpisodeDuration());
+        System.out.println("Rating: " + String.format("%.2f", this.getRating()/this.getReviewsAmount()));
+        System.out.println("Reviews: " + this.getReviewsAmount());
+    }
 }

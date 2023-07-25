@@ -17,6 +17,8 @@ public class Main {
 
         Show got = new Show();
         got.setName("Game Of Thrones");
+        got.setEpisodes(23);
+        got.setEpisodeDuration(53);
         got.getData();
     }
 }
