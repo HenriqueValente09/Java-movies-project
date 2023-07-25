@@ -8,6 +8,38 @@ public class Title {
     private int reviewsAmount;
     private int length;
 
+    public String getName() {
+        return name;
+    }
+
+    public int getReleaseDate() {
+        return releaseDate;
+    }
+
+    public boolean isIncluded() {
+        return included;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public int getReviewsAmount() {
+        return reviewsAmount;
+    }
+
+    public void setReviewsAmount(int reviewsAmount) {
+        this.reviewsAmount = reviewsAmount;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
