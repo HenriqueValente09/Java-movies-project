@@ -13,10 +13,10 @@ public class Main {
         movie.review(8);
         movie.review(8);
         movie.review(9);
-        movie.data();
+        movie.getData();
 
         Show got = new Show();
         got.setName("Game Of Thrones");
-        got.data();
+        got.getData();
     }
 }

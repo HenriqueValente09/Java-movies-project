@@ -24,7 +24,7 @@ public class Title {
         this.length = length;
     }
 
-    public void data() {
+    public void getData() {
         System.out.println("Name: " + name);
         System.out.println("Release Date: " + releaseDate);
         System.out.println("Length: " + length);
