@@ -24,10 +24,6 @@ public class Title {
         return rating;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
     public int getReviewsAmount() {
         return reviewsAmount;
     }

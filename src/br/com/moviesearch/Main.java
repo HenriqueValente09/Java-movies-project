@@ -16,6 +16,7 @@ public class Main {
         movie.review(8);
         movie.review(9);
         movie.getData();
+        System.out.println(movie.getStars());
 
         Show got = new Show();
         got.setName("Game Of Thrones");
