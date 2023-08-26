@@ -5,7 +5,7 @@ import br.com.moviesearch.calc.StarRating;
 public class Episode implements StarRating {
     private int numero;
     private String nome;
-    private Show serie;
+    private Show show;
     private int totalVisualizacoes;
 
     public int getTotalVisualizacoes() {
@@ -32,12 +32,12 @@ public class Episode implements StarRating {
         this.nome = nome;
     }
 
-    public Show getSerie() {
-        return serie;
+    public Show getShow() {
+        return show;
     }
 
-    public void setSerie(Show serie) {
-        this.serie = serie;
+    public void setShow(Show show) {
+        this.show = show;
     }
 
     @Override
