@@ -8,6 +8,10 @@ public class Title {
     private int reviewsAmount;
     private int length;
 
+    public Title(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

@@ -6,6 +6,10 @@ public class Show extends Title{
     private int episodeDuration;
     private boolean active;
 
+    public Show(String name) {
+        super(name);
+    }
+
     public int getSeasons() {
         return seasons;
     }
