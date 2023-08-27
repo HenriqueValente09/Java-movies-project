@@ -1,4 +1,4 @@
-package br.com.moviesearch;
+package br.com.moviesearch.main;
 
 import br.com.moviesearch.models.Movie;
 import br.com.moviesearch.models.Show;
