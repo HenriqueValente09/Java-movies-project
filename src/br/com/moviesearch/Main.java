@@ -3,6 +3,8 @@ package br.com.moviesearch;
 import br.com.moviesearch.models.Movie;
 import br.com.moviesearch.models.Show;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Movie movie = new Movie();
@@ -23,5 +25,22 @@ public class Main {
         got.setEpisodes(23);
         got.setEpisodeDuration(53);
         got.getData();
+
+        var spiderman = new Movie();
+        spiderman.setName("Spider-man");
+        spiderman.setReleaseDate(2002);
+        spiderman.setLength(120);
+
+        spiderman.getData();
+
+        ArrayList<Movie> movieList = new ArrayList<>();
+        movieList.add(movie);
+        movieList.add(spiderman);
+
+        for (Movie item: movieList
+             ) {
+            System.out.println(item.getName());
+        }
+
     }
 }
