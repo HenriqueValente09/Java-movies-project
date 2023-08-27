@@ -19,7 +19,6 @@ public class MainWithArray {
         movie.review(8);
         movie.review(9);
         movie.getData();
-        System.out.println(movie.getStars());
 
         Show got = new Show("Game Of Thrones");
         got.setEpisodes(23);
@@ -29,8 +28,6 @@ public class MainWithArray {
         var spiderman = new Movie("Spider-man");
         spiderman.setReleaseDate(2002);
         spiderman.setLength(120);
-
-        spiderman.getData();
 
         ArrayList<Movie> movieList = new ArrayList<>();
         movieList.add(movie);
@@ -45,5 +42,11 @@ public class MainWithArray {
         titleList.add(movie);
         titleList.add(spiderman);
         titleList.add(got);
+
+        for (Title item : titleList) {
+            if (item instanceof Movie movieItem) {
+                System.out.println(movieItem.getStars());
+            }
+        }
     }
 }
