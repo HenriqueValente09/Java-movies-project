@@ -57,5 +57,8 @@ public class MainWithArray {
         Collections.sort(characterList);
 
         System.out.println(characterList);
+
+        Collections.sort(titleList);
+        System.out.println(titleList);
     }
 }
