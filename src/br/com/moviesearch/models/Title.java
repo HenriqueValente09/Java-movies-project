@@ -1,6 +1,6 @@
 package br.com.moviesearch.models;
 
-public class Title implements Comparable<Title>{
+public class Title {
     private String name;
     private int releaseDate;
     private boolean included;
@@ -69,10 +69,10 @@ public class Title implements Comparable<Title>{
         reviewsAmount++;
     }
 
-    @Override
-    public int compareTo(Title title) {
-        return this.getName().compareTo(title.getName());
-    }
+//    @Override
+//    public int compareTo(Title title) {
+//        return this.getName().compareTo(title.getName());
+//    }
 
     @Override
     public String toString() {

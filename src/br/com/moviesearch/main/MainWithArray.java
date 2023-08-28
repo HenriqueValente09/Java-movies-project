@@ -6,6 +6,7 @@ import br.com.moviesearch.models.Title;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class MainWithArray {
 
@@ -58,7 +59,8 @@ public class MainWithArray {
 
         System.out.println(characterList);
 
-        Collections.sort(titleList);
+        System.out.println(titleList);
+        titleList.sort(Comparator.comparing(Title::getName));
         System.out.println(titleList);
     }
 }
