@@ -5,6 +5,7 @@ import br.com.moviesearch.models.Show;
 import br.com.moviesearch.models.Title;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainWithArray {
 
@@ -48,5 +49,13 @@ public class MainWithArray {
                 System.out.println(movieItem.getStars());
             }
         }
+
+        ArrayList<String> characterList = new ArrayList<>();
+        characterList.add("Ezio");
+        characterList.add("Connor");
+        characterList.add("Edward");
+        Collections.sort(characterList);
+
+        System.out.println(characterList);
     }
 }
