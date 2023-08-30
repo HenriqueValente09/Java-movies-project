@@ -3,9 +3,7 @@ package br.com.moviesearch.models;
 import com.google.gson.annotations.SerializedName;
 
 public class Title {
-    @SerializedName("Title")
     private String name;
-    @SerializedName("Released")
     private String releaseDate;
     private boolean included;
     private double rating;
@@ -14,6 +12,12 @@ public class Title {
 
     public Title(String name){
         this.name = name;
+    }
+
+    public Title(OmdbTitle omdbTitle) {
+        this.name = omdbTitle.title();
+        this.releaseDate = omdbTitle.year();
+        this.length = Integer.parseInt(String.valueOf(omdbTitle.runtime()).replaceAll("\\D+",""));
     }
 
     public String getName() {

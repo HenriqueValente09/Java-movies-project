@@ -27,9 +27,17 @@ public class MainWithApi {
                 .join();
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-        System.out.println(response);
-        //Title title = gson.fromJson(response, Title.class);
-        OmdbTitle OmdbTitle = gson.fromJson(response, OmdbTitle.class);
-        System.out.println(OmdbTitle);
+        OmdbTitle omdbTitle = gson.fromJson(response, OmdbTitle.class);
+        if (omdbTitle.error() != null) {
+            System.out.println(omdbTitle.error());
+        } else {
+            try {
+                Title title = new Title(omdbTitle);
+                title.getData();
+            } catch (NumberFormatException e) {
+                System.out.println("Ocorreu um erro:");
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }
