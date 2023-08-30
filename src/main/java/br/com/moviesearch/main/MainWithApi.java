@@ -1,6 +1,8 @@
 package br.com.moviesearch.main;
 
+import br.com.moviesearch.models.OmdbTitle;
 import br.com.moviesearch.models.Title;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -23,9 +25,11 @@ public class MainWithApi {
         String response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
                 .join();
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         System.out.println(response);
-        Title title = gson.fromJson(response, Title.class);
-        System.out.println(title);
+        //Title title = gson.fromJson(response, Title.class);
+        OmdbTitle OmdbTitle = gson.fromJson(response, OmdbTitle.class);
+        System.out.println(OmdbTitle);
     }
 }
