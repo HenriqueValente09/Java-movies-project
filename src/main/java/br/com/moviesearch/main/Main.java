@@ -24,15 +24,8 @@ public class Main {
         got.setEpisodeDuration(53);
         got.getData();
 
-        var spiderman = new Movie("Spider-man");
-        spiderman.setReleaseDate(2002);
-        spiderman.setLength(120);
-
-        spiderman.getData();
-
         ArrayList<Movie> movieList = new ArrayList<>();
         movieList.add(movie);
-        movieList.add(spiderman);
 
         for (Movie item: movieList
              ) {

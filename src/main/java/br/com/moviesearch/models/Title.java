@@ -1,8 +1,12 @@
 package br.com.moviesearch.models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Title {
+    @SerializedName("Title")
     private String name;
-    private int releaseDate;
+    @SerializedName("Released")
+    private String releaseDate;
     private boolean included;
     private double rating;
     private int reviewsAmount;
@@ -16,7 +20,7 @@ public class Title {
         return name;
     }
 
-    public int getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
@@ -44,7 +48,7 @@ public class Title {
         this.name = name;
     }
 
-    public void setReleaseDate(int releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 
@@ -76,6 +80,7 @@ public class Title {
 
     @Override
     public String toString() {
-        return this.getName();
+        getData();
+        return null;
     }
 }

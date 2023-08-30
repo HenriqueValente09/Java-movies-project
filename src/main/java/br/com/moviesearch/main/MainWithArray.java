@@ -28,7 +28,7 @@ public class MainWithArray {
         got.getData();
 
         var spiderman = new Movie("Spider-man");
-        spiderman.setReleaseDate(2002);
+        spiderman.setReleaseDate("2002");
         spiderman.setLength(120);
 
         ArrayList<Movie> movieList = new ArrayList<>();
